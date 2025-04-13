@@ -66,7 +66,7 @@
   </header>
   <main class="container">
     <div class="card">
-      <img src="<blockquote class="imgur-embed-pub" lang="en" data-id="wBFjzMq"><a href="https://imgur.com/wBFjzMq">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>" alt="Smart Air The Sqair">
+      <img src="https://imgur.com/a/sW4pplA" alt="Smart Air The Sqair">
       <h2>Smart Air รุ่น The Sqair</h2>
       <ul>
         <li>ครอบคลุมพื้นที่: 40 ตร.ม.</li>

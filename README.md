@@ -78,7 +78,7 @@
       <script>console.log("โหลดข้อมูล Smart Air The Sqair แล้ว");</script>
     </div>
     <div class="card">
-      <img src="C:\Users\B\Downloads/photo_๒๐๒๕-๐๔-๑๒_๐๙-๕๑-๑๙.jpg" alt="PHILIPS Air Purifier AC0820/20">
+      <img src="[C:\Users\B\Downloads/photo_๒๐๒๕-๐๔-๑๒_๐๙-๕๑-๑๙.jpg](https://imgur.com/a/Q3pvc2g)" alt="PHILIPS Air Purifier AC0820/20">
       <h2>PHILIPS Air Purifier AC0820/20</h2>
       <ul>
         <li>ครอบคลุมพื้นที่: 49 ตร.ม.</li>

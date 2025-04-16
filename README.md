@@ -66,7 +66,7 @@
   </header>
   <main class="container">
     <div class="card">
-      <img src="https://i.imgur.com/kGWbS3u.jpeg" alt="Smart Air The Sqair" width="300"> alt="Smart Air The Sqair">
+      <img src="https://i.imgur.com/kGWbS3u.jpeg" alt="Smart Air The Sqair" width="300">
       <h2>Smart Air รุ่น The Sqair</h2>
       <ul>
         <li>ครอบคลุมพื้นที่: 40 ตร.ม.</li>

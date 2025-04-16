@@ -78,7 +78,7 @@
       <script>console.log("โหลดข้อมูล Smart Air The Sqair แล้ว");</script>
     </div>
     <div class="card">
-      <img src="https://imgur.com/a/Q3pvc2g" alt="PHILIPS Air Purifier AC0820/20">
+      <img src="https://i.imgur.com/whLgbiy.jpeg" alt="Smart Air The Sqair" width="300">
       <h2>PHILIPS Air Purifier AC0820/20</h2>
       <ul>
         <li>ครอบคลุมพื้นที่: 49 ตร.ม.</li>
@@ -90,7 +90,7 @@
       <script>console.log("โหลดข้อมูล PHILIPS Air Purifier แล้ว");</script>
     </div>
     <div class="card">
-      <img src="https://i.imgur.com/hUVN7on.jpg" alt="Levoit Core 300">
+      <img src="https://i.imgur.com/izIBX0C.jpeg" alt="Smart Air The Sqair" width="300">
       <h2>Levoit Air Purifier Core 300</h2>
       <ul>
         <li>ครอบคลุมพื้นที่: 40 ตร.ม.</li>
@@ -102,7 +102,7 @@
       <script>console.log("โหลดข้อมูล Levoit Core 300 แล้ว");</script>
     </div>
     <div class="card">
-      <img src="https://i.imgur.com/LlXoyWx.jpg" alt="Levoit Core P350">
+      <img src="https://i.imgur.com/nWcXLTV.jpeg" alt="Smart Air The Sqair" width="300">
       <h2>Levoit Core P350 Pet Care</h2>
       <ul>
         <li>ครอบคลุมพื้นที่: 40 ตร.ม.</li>
@@ -114,7 +114,7 @@
       <script>console.log("โหลดข้อมูล Levoit Core P350 แล้ว");</script>
     </div>
     <div class="card">
-      <img src="https://i.imgur.com/uxrJtsh.jpg" alt="Xiaomi Mi Air Purifier 3H">
+      <img src="https://i.imgur.com/f27GMuk.jpeg" alt="Smart Air The Sqair" width="300">
       <h2>Xiaomi Mi Air Purifier 3H</h2>
       <ul>
         <li>ครอบคลุมพื้นที่: 28-48 ตร.ม.</li>
@@ -126,7 +126,7 @@
       <script>console.log("โหลดข้อมูล Xiaomi Mi Air Purifier แล้ว");</script>
     </div>
     <div class="card">
-      <img src="https://i.imgur.com/qkikD1O.jpg" alt="Electrolux FA31-203BL">
+      <img src="https://i.imgur.com/gqRC4UB.jpeg" alt="Smart Air The Sqair" width="300">
       <h2>Electrolux FA31-203BL</h2>
       <ul>
         <li>ครอบคลุมพื้นที่: 22 ตร.ม.</li>

@@ -6,101 +6,195 @@
   <title>เครื่องฟอกอากาศ</title>
   <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg-light: #f4f4f4;
+      --bg-dark: #121212;
+      --text-light: #ffffff;
+      --text-dark: #1a1a1a;
+      --card-light: #ffffff;
+      --card-dark: #1f1f1f;
+    }
+
     body {
       font-family: 'Sarabun', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f5f5;
-      color: #1a1a1a;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      transition: all 0.3s ease;
     }
+
+    .dark-mode {
+      background: var(--bg-dark);
+      color: var(--text-light);
+    }
+
     header {
-      background: #007B83;
+      background: #00a8a8;
       color: white;
-      padding: 1rem;
       text-align: center;
+      padding: 2rem;
     }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
     .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
       padding: 2rem;
     }
+
     .card {
-      background: white;
+      background: var(--card-light);
       border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      width: 280px;
-      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       padding: 1rem;
-      transition: transform 0.2s;
+      text-align: center;
+      transition: background 0.3s;
     }
-    .card:hover {
-      transform: translateY(-5px);
+
+    .dark-mode .card {
+      background: var(--card-dark);
     }
+
     .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
+      max-width: 100%;
+      height: auto;
       border-radius: 10px;
     }
+
     .card h2 {
+      color: #007B83;
       font-size: 1.2rem;
       margin: 1rem 0 0.5rem;
     }
-    .card a {
-      display: inline-block;
-      margin-top: 1rem;
-      color: #007B83;
-      text-decoration: none;
-      font-weight: bold;
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
     }
+
+    .card ul li {
+      padding: 0.25rem 0;
+    }
+
+    .toggle {
+      margin: 1rem;
+      text-align: center;
+    }
+
+    .toggle button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
     footer {
+      background: #eee;
       text-align: center;
       padding: 1rem;
-      background: #eee;
       font-size: 0.9rem;
+    }
+
+    .dark-mode footer {
+      background: #181818;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>เครื่องฟอกอากาศ</h1>
+    <h1>เครื่องฟอกอากาศยอดนิยม</h1>
   </header>
-  <div class="container">
+
+  <div class="toggle">
+    <button onclick="toggleMode()">สลับธีมกลางวัน/กลางคืน</button>
+  </div>
+
+  <main class="container">
     <div class="card">
       <img src="https://i.imgur.com/kGWbS3u.jpeg" alt="Smart Air The Sqair">
-      <h2>Smart Air The Sqair</h2>
-      <a href="smart_air_sqair.html">ดูรายละเอียด</a>
+      <h2>Smart Air รุ่น The Sqair</h2>
+      <ul>
+        <li>ครอบคลุมพื้นที่: 40 ตร.ม.</li>
+        <li>อัตราการกรอง: 315 ลบ.ม./ชั่วโมง</li>
+        <li>เสียง: 23-52 เดซิเบล</li>
+        <li>พลังงาน: 6W - 38W</li>
+        <li>น้ำหนัก: 6 กก.</li>
+      </ul>
     </div>
     <div class="card">
-      <img src="https://i.imgur.com/whLgbiy.jpeg" alt="Levoit Core 300">
-      <h2>Levoit Core 300</h2>
-      <a href="levoit_core300.html">ดูรายละเอียด</a>
+      <img src="https://i.imgur.com/whLgbiy.jpeg" alt="PHILIPS AC0820">
+      <h2>PHILIPS Air Purifier AC0820/20</h2>
+      <ul>
+        <li>ครอบคลุมพื้นที่: 49 ตร.ม.</li>
+        <li>อัตราการกรอง: 190 ลบ.ม./ชั่วโมง</li>
+        <li>เสียง: 35-61 เดซิเบล</li>
+        <li>พลังงาน: 20W</li>
+        <li>น้ำหนัก: 2.4 กก.</li>
+      </ul>
     </div>
     <div class="card">
-      <img src="https://i.imgur.com/izIBX0C.jpeg" alt="Xiaomi Air Purifier 4">
-      <h2>Xiaomi Air Purifier 4</h2>
-      <a href="xiaomi_4.html">ดูรายละเอียด</a>
+      <img src="https://i.imgur.com/izIBX0C.jpeg" alt="Levoit Core 300">
+      <h2>Levoit Air Purifier Core 300</h2>
+      <ul>
+        <li>ครอบคลุมพื้นที่: 40 ตร.ม.</li>
+        <li>อัตราการกรอง: 187 ลบ.ม./ชั่วโมง</li>
+        <li>เสียง: 24-50 เดซิเบล</li>
+        <li>พลังงาน: 45W</li>
+        <li>น้ำหนัก: 3.4 กก.</li>
+      </ul>
     </div>
     <div class="card">
-      <img src="https://i.imgur.com/nWcXLTV.jpeg" alt="Philips AC1215">
-      <h2>Philips AC1215</h2>
-      <a href="philips_ac1215.html">ดูรายละเอียด</a>
+      <img src="https://i.imgur.com/nWcXLTV.jpeg" alt="Levoit P350">
+      <h2>Levoit Core P350 Pet Care</h2>
+      <ul>
+        <li>ครอบคลุมพื้นที่: 40 ตร.ม.</li>
+        <li>อัตราการกรอง: 187 ลบ.ม./ชั่วโมง</li>
+        <li>เสียง: 24-48 เดซิเบล</li>
+        <li>พลังงาน: 33W</li>
+        <li>น้ำหนัก: 3.4 กก.</li>
+      </ul>
     </div>
     <div class="card">
-      <img src="https://i.imgur.com/f27GMuk.jpeg" alt="Electrolux FA41-402GY">
-      <h2>Electrolux FA41-402GY</h2>
-      <a href="electrolux_fa41.html">ดูรายละเอียด</a>
+      <img src="https://i.imgur.com/f27GMuk.jpeg" alt="Xiaomi 3H">
+      <h2>Xiaomi Mi Air Purifier 3H</h2>
+      <ul>
+        <li>ครอบคลุมพื้นที่: 28-48 ตร.ม.</li>
+        <li>อัตราการกรอง: 380 ลบ.ม./ชั่วโมง</li>
+        <li>เสียง: 64 เดซิเบล</li>
+        <li>พลังงาน: 100-240W</li>
+        <li>น้ำหนัก: 4.8 กก.</li>
+      </ul>
     </div>
     <div class="card">
-      <img src="https://i.imgur.com/gqRC4UB.jpeg" alt="Sharp FP-J30TA">
-      <h2>Sharp FP-J30TA</h2>
-      <a href="sharp_fpj30ta.html">ดูรายละเอียด</a>
+      <img src="https://i.imgur.com/gqRC4UB.jpeg" alt="Electrolux FA31-203BL">
+      <h2>Electrolux FA31-203BL</h2>
+      <ul>
+        <li>ครอบคลุมพื้นที่: 22 ตร.ม.</li>
+        <li>อัตราการกรอง: 177 ลบ.ม./ชั่วโมง</li>
+        <li>เสียง: 63 เดซิเบล</li>
+        <li>พลังงาน: 220W</li>
+        <li>น้ำหนัก: 2.7 กก.</li>
+      </ul>
     </div>
-  </div>
+  </main>
+
   <footer>
-    ติดตามเรา: <a href="https://www.facebook.com/Home23331061" target="_blank">เครื่องฟอกอากาศฝุ่นในบ้าน - Home</a>
+    <p>ติดตามเพิ่มเติมที่เพจ <a href="https://www.facebook.com/Home23331061" target="_blank">เครื่องฟอกอากาศฝุ่นในบ้าน - Home</a></p>
   </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 </body>
 </html>
